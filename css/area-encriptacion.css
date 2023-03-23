@@ -1,0 +1,31 @@
+.areaEncriptacion{ 
+    background-image: url("../imagenes/wallpaper-desktop.png");
+    padding: 1.2rem;
+}
+
+.areaEncriptacion__container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 375px){
+    .areaEncriptacion{
+        padding: 0.8rem;
+    }
+
+    .areaEncriptacion__container{
+        flex-direction: column;
+        padding: 0;
+    }    
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .areaEncriptacion{
+        padding: 0;
+    }
+
+    .areaEncriptacion__container{
+        flex-direction: column;
+        padding: 0;
+    }
+}

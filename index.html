@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador & Desencriptador Alura</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/encabezado.css">
+        <link rel="stylesheet" href="./css/area-encriptacion.css">
+        <link rel="stylesheet" href="./css/area-encriptacion/encriptacion-entrada.css">
+        <link rel="stylesheet" href="./css/area-encriptacion/encriptacion-salida.css">
+        <link rel="stylesheet" href="./css/rodapie.css">
+        <link href="https://fonts.googleapis.com/css2?family=Basic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="encabezado">
+            <div class="encabezado__container">
+                <img class="encabezado__logoAlura" src= "imagenes/logoAlura.png" alt="Logo de Alura">
+                <h1 class="encabezado__titulo">Encriptador & Desencriptador de Texto</h1>
+                <img class="encabezado__logoOne" src="imagenes/logoOne.png" alt="Logo de One">
+            </div>
+        </header>
+
+        <main class="areaEncriptacion">
+            <div class= "areaEncriptacion__container">
+              <section class="areaEncriptacion-entrada">
+                <textarea class="areaEncriptacion-entrada__textoIngresado" cols="60" rows="13" placeholder="Ingrese el texto aquí" onkeypress="return validar(event)"></textarea>
+                <div class="areaAdvertencia">
+                    <img class="areaAdvertencia__imagen" src="./imagenes/advertencia.png" alt="Signo de advertencia">
+                    <h2 class="areaAdvertencia__texto">Solo letras minúsculas y sin acentos</h2>
+                </div>
+                <div class="areaEncriptacion-entrada__botonesContainer">
+                    <button class="areaEncriptacion-entrada__boton--encriptar boton" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="areaEncriptacion-entrada__boton--desencriptar boton" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+              </section>
+              <section class ="areaEncriptacion-salida">
+                <img class="areaEncriptacion-salida__robot" src="./imagenes/robot.gif" alt="Imagen de robot">
+                <div class="areaEncriptacion-salida__notas">
+                    <p class="areaEncriptacion-salida__notas--nota1">Ningún mensaje fue encontrado</p>
+                    <p class="areaEncriptacion-salida__notas--nota2">Ingresa el texto que desees encriptar o desencriptar</p> 
+                </div>
+                <textarea class="areaEncriptacion-salida__textoResultante" cols="25" rows="14"></textarea>
+                <div class ="areaEncriptacion-salida__copia">
+                    <button class="areaEncriptacion-salida__boton--copiar boton" onclick="botonCopiar()">Copiar</button>
+                </div>
+              </section>  
+            </div>
+        </main>
+        
+        <footer class="rodapie">
+            <p class="rodapie__copyright descripcion">&copy Encriptador & Desencriptador Alura 2023</p>
+            <p class="rodapie__texto descripcion">Desarrollado por Isabel Gomez Luque</p>
+            <div class="rodapie__contacto">
+                <a href="https://github.com/Belis52"><img class="rodapie__logoGithub" src="./imagenes/logoGithub.png" alt="Logo de Git hub"></a>
+                <a href="https://www.linkedin.com/in/isabel-gomez-luque-1-dev/"><img class="rodapie__logoLinkedin" src="./imagenes/logo-linkedin.png" alt="Logo de LinkedIn"></a>
+                <a href="https://twitter.com/Belis52"><img class="rodapie__logoTwitter" src="./imagenes/logoTwitter.png" alt="Logo de Twitter"></a>
+            </div>
+        </footer>
+        <script src="./encriptador.js"></script>
+    </body>
+</html>

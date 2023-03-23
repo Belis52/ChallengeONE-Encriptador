@@ -1,0 +1,92 @@
+.rodapie{
+    background-color: rgb(4, 29, 83);
+    padding: 0.28rem 0;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.descripcion{
+    font-family: 'Basic', sans-serif;
+    color: #cfdbfd;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.rodapie__contacto{
+    display: flex;
+    text-align: center;
+}
+
+.rodapie__logoGithub{
+    width: 2.3rem;
+    margin-right: 1.3vw;
+    margin-top: 0.2rem;
+}
+
+.rodapie__logoLinkedin{
+    width: 3rem;
+    margin-right: 0.8vw;
+}
+
+.rodapie__logoTwitter{
+    width: 3.1rem;
+}
+
+@media screen and (max-width: 375px){
+    .rodapie{
+        flex-direction: column;
+        vertical-align: center;
+        align-items: normal;
+    }
+
+    .rodapie__copyright{
+        padding-top: 1.5rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .rodapie__texto{
+        padding-bottom: 1.5rem;
+    }
+
+    .rodapie__contacto{
+        padding: 0 2.5rem 1rem 2.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .rodapie{
+        flex-wrap: wrap;
+        padding: 1.5rem 1rem;
+        align-items: normal;
+        vertical-align: center;
+    }
+
+    .descripcion{
+        font-size: 1.2rem;
+        width: 45%;
+    }
+
+    .rodapie__contacto{
+        margin-top: 1.5rem;
+        display: flex;
+    }
+
+    .rodapie__logoGithub{
+        width: 3.2rem;
+        margin-right: 11vw;
+        margin-top: 0.2rem;
+    }
+    
+    .rodapie__logoLinkedin{
+        width: 3.9rem;
+        margin-right: 10vw;
+    }
+    
+    .rodapie__logoTwitter{
+        width: 4rem;
+    }
+}

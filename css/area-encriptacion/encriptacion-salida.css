@@ -1,0 +1,154 @@
+.areaEncriptacion-salida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #281a72;
+    border-radius: 12px; 
+    width: 25vw;
+}
+
+.areaEncriptacion-salida__robot{
+    width: 25vw;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.areaEncriptacion-salida__notas{
+    width: 20vw;
+    font-family: 'Basic', sans-serif;
+    text-align: center;
+    color:#170e49;
+}
+
+.areaEncriptacion-salida__notas--nota1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.areaEncriptacion-salida__notas--nota2{
+    font-size: 1rem;
+}
+
+.areaEncriptacion-salida__textoResultante{
+    display: none;
+    font-family: 'Basic', sans-serif;
+    font-size: 1.3rem;
+    color:rgb(47, 13, 199);
+    background-color: #cfdbfd;
+    width: 18vw;
+    height: 22rem;
+    opacity: 0.8;
+    margin: 0.5rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+}
+
+.areaEncriptacion-salida__copia{
+    display: none;
+    text-align: center;
+}
+
+.areaEncriptacion-salida__boton--copiar{
+    background-color: #580c8a;
+    border: 1px solid #56088a;
+    padding: 0.7rem 3.2rem;
+    transition: all 5ms;
+}
+
+.areaEncriptacion-salida__boton--copiar:hover{
+    background-color: #43076b;
+    border-color: #360557;
+}
+
+@media screen and (max-width: 375px){
+    .areaEncriptacion-salida{
+        width: auto;
+        padding: 0.8rem 0;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+
+    .areaEncriptacion-salida__robot{
+        margin-top: 0;
+        margin-left: 5%;
+        width: 30%;
+    }
+
+    .areaEncriptacion-salida__notas{
+        width: 62%;
+    }
+
+    .areaEncriptacion-salida__notas--nota1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .areaEncriptacion-salida__notas--nota2{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .areaEncriptacion-salida__textoResultante{
+        width: 81%;
+        margin: 0 0.5rem 0.3rem 0.5rem;
+        height: 16rem;
+        font-size: 1.3rem;
+    }
+
+    .areaEncriptacion-salida__copia{
+        padding-top: 0.6rem;
+        margin: auto;
+    }
+
+    .areaEncriptacion-salida__boton--copiar{
+        margin-bottom: 0.3rem;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .areaEncriptacion-salida{
+        flex-direction: row;
+        width: auto;
+        flex-wrap: wrap;
+        margin: 1.7rem 1.2rem 1.7rem 1.2rem;
+    }
+
+    .areaEncriptacion-salida__robot{
+        margin: 0 0 0 1rem;
+        width: 25%;
+    }
+
+    .areaEncriptacion-salida__notas{
+        width: 60%;
+        margin: 1rem;
+    }
+
+    .areaEncriptacion-salida__notas--nota1{
+        font-size: 1.5rem;
+    }
+
+    .areaEncriptacion-salida__notas--nota2{
+        font-size: 1rem;
+    }
+
+    .areaEncriptacion-salida__textoResultante{
+        width: 90%;
+        height: 13rem;
+        padding: 1.8rem 1.5rem;
+        font-size: 4.5vw;
+    }
+
+    .areaEncriptacion-salida__copia{
+        margin:auto;
+    }
+
+    .areaEncriptacion-salida__boton--copiar{
+        margin-bottom: 0.7rem;
+        margin-top: 0.3rem;
+    }
+}

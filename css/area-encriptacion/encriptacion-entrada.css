@@ -1,0 +1,142 @@
+.areaEncriptacion-entrada{
+    display: flex;
+    flex-direction: column;
+}
+
+.areaEncriptacion-entrada__textoIngresado{
+    background-color: #cfdbfd;
+    width: 48vw;
+    opacity: 0.7;
+    margin-top: 2.8rem;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Basic', sans-serif;
+    font-size: 1.2rem;
+    color:rgb(2, 2, 77, 0.9);
+}
+
+::placeholder{
+    color:rgb(96, 73, 201);
+}
+
+.areaAdvertencia{
+    display: flex;
+    align-items: center;
+}
+
+.areaAdvertencia__imagen{
+    width: 1.5rem;
+}
+
+.areaAdvertencia__texto{
+    font-family: 'Basic', sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:rgb(13, 35, 160);
+    margin-top: 0.3rem;
+}
+
+.areaEncriptacion-entrada__botonesContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+.boton{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: antiquewhite;
+    padding: 0.7rem 2.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: all 5ms;
+}
+
+.boton:hover{
+    transform: scale(1.06);
+}
+
+.areaEncriptacion-entrada__boton--encriptar{
+    padding: 0 3.5rem;
+    margin-right: 2rem;
+    background-color: #1c1157;
+    border: 1px solid #211563;
+}
+
+.areaEncriptacion-entrada__boton--encriptar:hover{
+    background-color: #0b004b;
+    border-color: #0b004b;
+}
+
+.areaEncriptacion-entrada__boton--desencriptar{
+    background-color: #5c42f1;
+    border: 1px solid #6a55ee;
+}
+
+.areaEncriptacion-entrada__boton--desencriptar:hover{
+    background-color: #5438f1;
+    border-color: #4c2ff0;
+}
+
+@media screen and (max-width: 375px){
+    .areaEncriptacion-entrada__textoIngresado{
+        margin: 0.5rem 0 0 0;
+        padding: 1.8rem 1.5rem;
+        width: auto;
+        height: 15rem;
+        font-size: 5vw;
+    }
+    .areaEncriptacion-entrada__botonesContainer{
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .areaAdvertencia{
+        margin-bottom: 0.2rem;
+    }
+    
+    .boton{
+        padding: 1rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .areaEncriptacion-entrada__boton--encriptar{
+        margin-bottom: 1.5rem;
+        margin-right: 0rem;
+        margin-top: 1rem;
+    }
+
+    .areaEncriptacion-entrada__boton--desencriptar{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .areaEncriptacion-entrada__textoIngresado{
+        margin: 1.5rem 1.2rem 0.1rem 1.2rem;
+        padding: 1.8rem 1.5rem;
+        width: auto;
+        height: 30rem;
+        font-size: 4.5vw;
+    }
+
+    .areaEncriptacion-entrada__botonesContainer{
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .areaAdvertencia{
+        margin: 0.5rem 1rem 1.5rem 1.7rem;
+    }
+
+    .areaAdvertencia__texto{
+        font-size: 1rem;
+    }
+
+    .boton{
+        font-size: 3vw;
+        padding-right: 10%;
+        padding-left: 8%;
+    }
+
+}
