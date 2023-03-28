@@ -18,6 +18,9 @@ Por otro lado, existe un botón "Copiar" (que equivale a presionar Ctrl+V) que p
 - CSS
 - JavaScript
 
+## :sparkles: Acceso
+Puedes acceder a la previsualización de este proyecto <a href="https://belis52.github.io/ChallengeONE-Encriptador/">aquí</a>
+
 ## :raising_hand: Autor
 Desarrollado por Isabel Gomez Luque
 
