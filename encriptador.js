@@ -6,9 +6,9 @@ const notas = document.querySelector(".areaEncriptacion-salida__notas");
 
 function validar(texto) {
     var tecla = texto.charCode || texto.which;
-    if (!((tecla >= 97 && tecla <= 122) || tecla == 241)){
+    if (!((tecla >= 97 && tecla <= 122) || tecla == 241 || tecla == 32)){
         alert("Solo se aceptan letras minúsculas y sin acentos");
-        return false
+        return false;
     }
 }
 
