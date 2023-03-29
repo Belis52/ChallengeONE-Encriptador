@@ -26,6 +26,10 @@ function botonDesencriptar(){
     const desencriptado = desencriptar(textoIngresado.value);
     textoResultante.value = desencriptado;
     textoIngresado.value ="";
+    imagenRobot.style.display = "none";
+    notas.style.display = "none";
+    textoResultante.style.display ="block";
+    areaCopia.style.display ="block"
 }
 
 function botonCopiar(){
